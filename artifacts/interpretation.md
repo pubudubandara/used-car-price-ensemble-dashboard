@@ -15,5 +15,5 @@
 ### Dataset Limitations
 - **Synthetic Mileage:** `Millage(KM)` had a `-1.0` correlation with `YOM` ($\approx 11,000\text{ km} \times \text{age}$) and was excluded.
 - **Advertised vs. Final Price:** Listings reflect asking prices on ikman.lk and Riyasewana rather than final negotiated sale prices.
-- **Two-Month Snapshot:** Data covers Dec 2024 – Feb 2025 only, preventing longitudinal time-series modeling.
+- **Two-Month Snapshot:** Data covers Dec 2024 â€“ Feb 2025 only, preventing longitudinal time-series modeling.
 - **Near-Duplicate Listings:** Under `GroupShuffleSplit` (8842 distinct attribute combinations), MAE changed by **-1.32%** for Random Forest and **+1.21%** for XGBoost, confirming minimal leakage from duplicate configurations.

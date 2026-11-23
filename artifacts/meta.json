@@ -1,0 +1,27 @@
+{
+  "CAT": [
+    "Brand",
+    "Model",
+    "Town",
+    "Gear",
+    "Fuel Type",
+    "Leasing",
+    "Condition",
+    "AIR CONDITION",
+    "POWER STEERING",
+    "POWER MIRROR",
+    "POWER WINDOW"
+  ],
+  "NUM": [
+    "Age",
+    "Engine (cc)"
+  ],
+  "top_models": [
+    "Stacking (RF+GB+XGB)",
+    "Hybrid RF + ANN",
+    "Random Forest"
+  ],
+  "best": "Stacking (RF+GB+XGB)",
+  "ref_year": 2025,
+  "unit": "lakhs (1 lakh = LKR 100,000)"
+}

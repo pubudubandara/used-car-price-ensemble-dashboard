@@ -7,6 +7,7 @@ Streamlit dashboard for comparing ensemble regressors that predict used-car pric
 
 ## Project contents
 
+- `Car_Price_Dashboard.ipynb` - full exploratory data analysis, model training, evaluation, validation checks, and artifact generation
 - `train.py` - reproducible local retraining and interpretation generation script
 - `app.py` - interactive Streamlit dashboard
 - `requirements.txt` - Python dependencies for local execution and Streamlit Cloud deployment

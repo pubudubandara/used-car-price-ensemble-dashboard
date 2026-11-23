@@ -1,7 +1,7 @@
 # Sri Lankan Used-Car Price Prediction Dashboard
 
 ** Machine Learning & Pattern Recognition – Hands-on Assignment**  
-**Live Dashboard:** [Sri Lankan Used-Car Price Prediction App](https://car-price-ensemble-pubudu-dev.streamlit.app/)
+**Live Dashboard:** [Sri Lankan Used-Car Price Prediction App](https://used-car-price-ensemble-dashboard.streamlit.app/)
 
 Streamlit dashboard for comparing ensemble regressors that predict used-car prices in Sri Lanka across **Bagging**, **Boosting**, **Stacking**, and **Hybrid** paradigms. Prices are reported in lakhs (1 lakh = LKR 100,000).
 

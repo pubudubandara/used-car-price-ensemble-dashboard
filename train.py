@@ -1,6 +1,6 @@
 """
-Retrain the 5 core ensemble models locally and regenerate artifacts/.
-Run with: python retrain.py
+Train the 5 core ensemble models locally and regenerate artifacts/.
+Run with: python train.py
 """
 import os, time, json, warnings, joblib
 import numpy as np, pandas as pd
@@ -12,7 +12,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.ensemble import (RandomForestRegressor, GradientBoostingRegressor,
                               StackingRegressor, VotingRegressor)
 from sklearn.linear_model import RidgeCV
-from sklearn.neural_network import MLPRegressor
+from sklearn.neural_network import MLPRegresso
 from sklearn.inspection import permutation_importance
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from xgboost import XGBRegressor

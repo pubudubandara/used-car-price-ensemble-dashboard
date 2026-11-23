@@ -147,8 +147,8 @@ results.to_csv("artifacts/results.csv", index=False)
 imp.to_csv("artifacts/feature_importance.csv", index=False)
 df.to_csv("artifacts/clean_data.csv", index=False)
 pd.DataFrame({"actual": t_true, **{k: v for k, v in preds.items()}}).to_csv("artifacts/test_predictions.csv", index=False)
-open("artifacts/interpretation.md", "w").write(INTERPRETATION)
+open("artifacts/interpretation.md", "w", encoding="utf-8").write(INTERPRETATION)
 json.dump({"CAT": CAT, "NUM": NUM, "top_models": top_names, "best": best_name, "ref_year": 2025,
-           "unit": "lakhs (1 lakh = LKR 100,000)"}, open("artifacts/meta.json", "w"), indent=2)
+           "unit": "lakhs (1 lakh = LKR 100,000)"},  open("artifacts/meta.json", "w", encoding="utf-8"), indent=2)
 
 print("Done! Run dashboard: .\.venv\Scripts\python.exe -m streamlit run app.py")

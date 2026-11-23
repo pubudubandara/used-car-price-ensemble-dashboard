@@ -11,11 +11,10 @@ def load_models():
 
 @st.cache_data
 def load_tables():
-    meta = json.load(open("artifacts/meta.json"))
+    meta = json.load(open("artifacts/meta.json", encoding="utf-8"))
     return (pd.read_csv("artifacts/clean_data.csv"), pd.read_csv("artifacts/results.csv"),
-            pd.read_csv("artifacts/feature_importance.csv"), pd.read_csv("artifacts/test_predictions.csv"),
-            meta, open("artifacts/interpretation.md").read())
-
+        pd.read_csv("artifacts/feature_importance.csv"), pd.read_csv("artifacts/test_predictions.csv"),
+        meta, open("artifacts/interpretation.md", encoding="utf-8").read())
 models = load_models()
 df, res, imp, tp, meta, interp = load_tables()
 CAT, NUM = meta["CAT"], meta["NUM"]
